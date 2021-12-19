@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\InverseSum.cpp" />
     <ClCompile Include="src\palindromic.cpp" />
     <ClCompile Include="src\SumInversePalindromic.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\InverseSum.h" />
     <ClInclude Include="src\palindromic.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

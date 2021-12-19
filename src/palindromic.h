@@ -11,7 +11,7 @@ class CPalindromic
    // Compute the list
    bool GetUnderValue( int nMaxValue );
    // Getter
-   std::vector<int> GetVector() { return m_vtPalindromics; };
+   std::vector<int>* GetVector() { return &m_vtPalindromics; };
 
    private:
 

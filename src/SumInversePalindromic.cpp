@@ -3,12 +3,14 @@
 
 #include <iostream>
 #include "palindromic.h"
+#include "InverseSum.h"
 
 int main()
 {
    CPalindromic base10( 10 );
-   base10.GetUnderValue( 1000 );
-
+   base10.GetUnderValue( 1e6 );
+   CInverseSum Sum(base10);
+   Sum.GetResult();
 
    std::cout << "Hello World!\n";
 }
