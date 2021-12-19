@@ -1,16 +1,20 @@
 #pragma once
 #include <string>
 #include <fstream>
+#include <iostream>
+#include <iomanip>
 
 class CCsvMgr
 {
+public:
    CCsvMgr();
+   ~CCsvMgr();
 
    template <class T, class ... Ts>
-   void PrintLine( T a, Ts&... args );
+   bool PrintLine( T a, Ts&... args );
 
    template <class T>
-   void PrintLine( T a);
+   bool PrintLine( T a);
 
 private:
    // Directory of the file
@@ -21,19 +25,24 @@ private:
 
 // Print functions
 template<class T, class ...Ts>
-inline void CCsvMgr::PrintLine( T a, Ts& ...args ) {
+inline bool CCsvMgr::PrintLine( T a, Ts& ...args ) {
 
    // Print the data without breakline
-   m_outdata << a << ";";
+   m_outdata << std::fixed << std::setprecision( 8 ) << a << ";";
 
    // Call the same function to print the other values
-   PrintLine(args);
+   return PrintLine( args... );
 }
 
 template<class T>
-inline void CCsvMgr::PrintLine( T a ) {
+inline bool CCsvMgr::PrintLine( T a ) {
+
+   if ( !m_outdata ) {
+      std::cout << "Impossible to write in csv file.\n";
+      return false;
+   }
 
    // Print the last value,
    // this will need a breakline
-   m_outdata << a << ";" << std::endl;
+   m_outdata << std::fixed << std::setprecision( 8 ) << a << std::endl;
 }

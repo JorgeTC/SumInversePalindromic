@@ -12,6 +12,7 @@ class CPalindromic
    bool GetUnderValue( int nMaxValue );
    // Getter
    std::vector<int>* GetVector() { return &m_vtPalindromics; };
+   double GetInversesumValue();
 
    private:
 

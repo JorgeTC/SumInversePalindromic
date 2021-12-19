@@ -3,16 +3,21 @@
 
 #include <iostream>
 #include "palindromic.h"
-#include "InverseSum.h"
+#include "CsvMgr.h"
 
 int main()
 {
-   CPalindromic base10( 10 );
-   base10.GetUnderValue( 1e6 );
-   CInverseSum Sum(base10);
-   Sum.GetResult();
 
-   std::cout << "Hello World!\n";
+   CCsvMgr Writer;
+
+   for ( int nBase = 2; nBase < 100; nBase++ ) {
+
+      CPalindromic base( nBase );
+      base.GetUnderValue( 1e8 );
+      double dResult = base.GetInversesumValue();
+
+      Writer.PrintLine( nBase, dResult );
+   }
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
