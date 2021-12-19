@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\palindromic.cpp" />
     <ClCompile Include="src\SumInversePalindromic.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\palindromic.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
+#include "palindromic.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+   CPalindromic base10( 10 );
+   base10.GetUnderValue( 1000 );
+
+
+   std::cout << "Hello World!\n";
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
