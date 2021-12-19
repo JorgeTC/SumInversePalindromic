@@ -5,7 +5,11 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+   CPalindromic base10( 2 );
+   base10.GetUnderValue( 10000 );
+
+
+   std::cout << "Hello World!\n";
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
