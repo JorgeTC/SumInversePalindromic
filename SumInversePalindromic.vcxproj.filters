@@ -21,7 +21,7 @@
     <ClCompile Include="src\palindromic.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="InverseSum.cpp">
+    <ClCompile Include="src\InverseSum.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="src\palindromic.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="InverseSum.h">
+    <ClInclude Include="src\InverseSum.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
