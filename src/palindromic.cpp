@@ -1,4 +1,5 @@
 #include "palindromic.h"
+#include "InverseSum.h"
 
 // Macro to iterate vector backwards
 #define CEIL_DIVISION(_x,_y) ( (_x) / (_y) + ( (_x) % (_y) != 0) )
@@ -27,6 +28,12 @@ CPalindromic::GetUnderValue( int nMaxValue ) {
    }
 
    return true;
+}
+
+double
+CPalindromic::GetInversesumValue() {
+   CInverseSum sum(this);
+   return sum.GetResult();
 }
 
 bool

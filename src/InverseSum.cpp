@@ -9,6 +9,10 @@ CInverseSum::CInverseSum( CPalindromic &palin ) {
    m_pvtToSum = palin.GetVector();
 }
 
+CInverseSum::CInverseSum( CPalindromic* palin ) {
+   m_pvtToSum = palin->GetVector();
+}
+
 double
 CInverseSum::GetResult() {
 

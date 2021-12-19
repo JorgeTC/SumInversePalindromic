@@ -8,6 +8,7 @@ class CInverseSum
 public:
    CInverseSum( std::vector<int>* ptToSum );
    CInverseSum( CPalindromic &palin );
+   CInverseSum( CPalindromic *palin );
 
    double GetResult();
 private:

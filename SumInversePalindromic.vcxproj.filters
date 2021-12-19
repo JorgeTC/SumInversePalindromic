@@ -24,12 +24,18 @@
     <ClCompile Include="src\InverseSum.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="src\CsvMgr.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\palindromic.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="src\InverseSum.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CsvMgr.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
